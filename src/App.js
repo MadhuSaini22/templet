@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
 
-function App() {
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import MoneyCard from "./pages/MoneyCard/MoneyCard";
+import TimeTable from "./pages/TimeTable/TimeTable";
+import Plan from "./pages/Plan/Plan";
+import FareChart from "./pages/FareChart/FareChart";
+import Navbar from "./components/Navbar";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/about" exact>
+            <About />
+          </Route>
+          <Route path="/moneycard" exact>
+            <MoneyCard />
+          </Route>
+          <Route path="/timetable" exact>
+            <TimeTable />
+          </Route>
+          <Route path="/plan" exact>
+            <Plan />
+          </Route>
+          <Route path="/farechart" exact>
+            <FareChart />
+          </Route>
+          <Route path="/contact" exact>
+            <Contact />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </Router>
   );
-}
+};
 
 export default App;
