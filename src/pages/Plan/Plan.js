@@ -149,8 +149,7 @@ const Plan = () => {
             <div style={{ width: "25%" }}>
               <Select options={route} />
             </div>
-            <p style={{ backgroundColor: "white" }}>{`You selected`}</p>
-
+            
             {/* 
             <select
               id="locality-dropdown"
@@ -186,7 +185,7 @@ const Plan = () => {
               <Select options={route} />
             </div>
 
-            <select></select>
+            
             {/*            
             <select
               id="locality-dropdown1"
