@@ -1,0 +1,35 @@
+{
+  "routes": [
+    {
+      "id": 1,
+      "from": "Kharwar Nagar",
+      "to": "Magdalla",
+      "fare": 20
+    },
+    {
+      "id": 2,
+      "from": "Amazia",
+      "to": "Parvat Patia",
+      "fare": 5
+    },
+    {
+      "id": 3,
+      "from": "Jamna Nagar",
+      "to": "Safal Square",
+      "fare": 12
+    },
+    {
+      "id": 4,
+      "from": "Maharana Pratap Bridge",
+      "to": "University",
+      "fare": 25
+    },
+    {
+      "id": 5,
+      "from": "Chikuvadi",
+      "to": "Puna Patia",
+      "fare": 15
+    }
+  ]
+  
+}

@@ -1,0 +1,157 @@
+.head {
+  color: rgb(138, 169, 223);
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: none;
+  width: 116px;
+  background-color: white;
+  margin-top: -16px;
+}
+
+#rosesearch label {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  width: 30%;
+  font-size: 1.1em;
+  float: left;
+  color: #000000;
+  margin-top: 8px;
+}
+
+#rosesearch input {
+  font-size: 12px;
+  padding: 4px 2px;
+  border: solid 1px #000000;
+  width: 60%;
+  margin: 2px 0 20px 10px;
+  color: #000000;
+  float: left;
+}
+
+#rosesearch select {
+  font-size: 12px;
+  padding: 4px 2px;
+  border: solid 1px #000000;
+  width: 60%;
+  margin: 2px 0 20px 10px;
+  color: #000000;
+  float: left;
+}
+
+#rosesearch div.form-row {
+  width: 100%;
+  display: block;
+  margin-top: 2em;
+  overflow: auto;
+  zoom: 1;
+}
+
+#rosesearch div.form-row div.editor-cell {
+  float: left;
+  width: 33%;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #305596 !important;
+  font-weight: bold;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #c2c0c0;
+}
+
+.fromAutoComplete {
+  position: absolute;
+  top: 64px;
+  left: 120px;
+  background-color: white;
+  color: blue;
+  box-shadow: 0px 2px 2px 1px #b1a8a8;
+  width: 188px;
+  max-height: 231px;
+  overflow: auto;
+  z-index: 1;
+  padding: 7px;
+}
+
+.toAutoComplete {
+  position: absolute;
+  top: 64px;
+  left: 435px;
+  background-color: white;
+  color: blue;
+  box-shadow: 0px 2px 2px 1px #b1a8a8;
+  width: 188px;
+  max-height: 231px;
+  overflow: auto;
+  z-index: 1;
+  padding: 7px;
+}
+
+/*css*/
+.grid .grid-header {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 3px 10px;
+}
+.scrollrow {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100000px;
+}
+.grid .leftcolumn {
+  border-right: 2px solid #d2cfcf;
+  /*background: red;*/
+  width: 20%;
+  float: left;
+}
+.customrow {
+  /*background-color: #eaeaec;*/
+  display: table;
+  width: 100%;
+}
+.leftcolumn .customrow .customcolumn {
+  border-bottom: 1px solid #d2cfcf;
+}
+.customrow .customcolumn {
+  width: 300px;
+  float: left;
+  border-right: 1px solid #ccc;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.customcolumn .bg-blue {
+  background-color: #0073b7 !important;
+  color: #f9f9f9 !important;
+  height: 34px;
+}
+.customrow .customcolumn2 {
+  width: 150px;
+  float: left;
+  border-right: 1px solid #d2cfcf;
+  padding: 5px;
+  border-bottom: 1px solid #d2cfcf;
+  height: 37px;
+  padding: 5px;
+  color: #0073cc;
+  background-color: #deedf5;
+  font-weight: 600;
+}
+.customcolumnleft {
+  width: 100%;
+  border-bottom: 1px solid #d2cfcf;
+  height: 37px;
+  padding: 5px;
+  color: #0073cc;
+  background-color: #deedf5;
+  font-weight: 600;
+}

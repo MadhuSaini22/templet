@@ -45,18 +45,11 @@ const Navbar = () => {
   return (
     <>
       <nav id="id1">
-        <NavLink className="navbar-brand navbar-logo" to="/" exact>
+        <NavLink className="navbar-brand navbar-logo" to="" exact>
           BRTS Management System
         </NavLink>
 
         <div className="main">
-          {/* <button className="btn">
-            <i className="fa fa-sign-in"></i> Sign In
-          </button>
-          <button className="btn">
-            <i className="fa fa-user-plus"></i> Sign Up
-          </button> */}
-
           <button
             className="btn"
             data-toggle="modal"
@@ -67,7 +60,7 @@ const Navbar = () => {
           <button
             className="btn"
             data-toggle="modal"
-            data-target="#exampleModal"
+            data-target="#exampleModal1"
           >
             <i className="fa fa-user-plus"></i> Register
           </button>
@@ -136,8 +129,278 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
+          <div
+            class="modal fade"
+            id="exampleModal1"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div
+                  class="modal-header"
+                  style={{ backgroundColor: "blue", color: "white" }}
+                >
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Registration
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <form>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Mobile"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <div class="radio">
+                              <p>
+                                <strong>Gender:</strong>
+                              </p>
+                              <label
+                                style={{
+                                  whiteSpace: "nowrap",
+                                  marginRight: "20px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="gender"
+                                  value="male"
+                                />
+                                Male
+                                <br />
+                              </label>
+                              <label
+                                style={{
+                                  whiteSpace: "nowrap",
+                                  marginRight: "20px",
+                                }}
+                              >
+                                <input
+                                  type="radio"
+                                  name="gender"
+                                  value="female"
+                                />
+                                Female
+                                <br />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="Confirm Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12" style={{ padding: "5px" }}>
+                        <button
+                          type="button"
+                          class="btn btn-default"
+                          style={{ backgroundColor: "blue" }}
+                        >
+                          <i class="fa fa-times"></i>&nbsp;Cancel
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fa fa-pencil"></i>&nbsp;Register
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div
+                  class="modal-header"
+                  style={{ backgroundColor: "blue", color: "white" }}
+                >
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Booking Details For Your Route
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="farelist"
+                        style={{
+                          border: "2px solid orange",
+                          backgroundColor: "#f8ebce",
+                          borderRadius: "6px",
+                          padding: "15px",
+                          margin: "5px",
+                        }}
+                      >
+                        <h4 class="header">Booking Details</h4>
+                        <hr />
+                        <div class="fare-row">
+                          <div class="label">From</div>
+                          <div class="label2">xyz</div>
+                        </div>
+                        <p>
+                          <div class="label">To</div>
+                          <div class="label2">xyz</div>
+                        </p>
+                        <p>
+                          <div class="label">Adult Fare</div>
+                          <div class="label2">₹ 9</div>
+                        </p>
+                        <p>
+                          <div class="label">Child Fare</div>
+                          <div class="label2">₹ 44</div>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="select_size-pasangers">
+                        <h4>
+                          <span>Booking Options</span>
+                        </h4>
+                      </div>
+                    </div>
+
+                    <form>
+                      <div class="col-md-12">
+                        <label
+                          class="radio-inline"
+                          style={{
+                            whiteSpace: "nowrap",
+                            marginRight: "20px",
+                          }}
+                        >
+                          <input
+                            type="radio"
+                            id="r11"
+                            name="group"
+                            value="adult"
+                            style={{ width: "auto" }}
+                          />
+                          Adult
+                        </label>
+                        <label
+                          class="radio-inline"
+                          style={{
+                            whiteSpace: "nowrap",
+                            marginRight: "20px",
+                          }}
+                        >
+                          <input
+                            type="radio"
+                            id="r12"
+                            name="group"
+                            value="child"
+                            style={{ width: "auto" }}
+                          />
+                          Child
+                        </label>
+                        <button type="submit" class="btn btn-primary">
+                          Book Ticket
+                        </button>
+                        <p>
+                          Total Price To Be Paid :<span class="price">₹45</span>
+                        </p>
+                        <div class="alert alert-danger">
+                          <strong>*</strong> Luggage more than
+                          <strong>5 Kgs</strong> will be charged at the station.
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="modal-footer" style={{ padding: "10px" }}>
+                  <div class="text-right small">
+                    Powered By Gujarat Munciple Corporation
+                  </div>
+                </div>
+                <div id="dynamic_render"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
+
       <nav className="navbar navbar-expand-lg navbar-mainbg">
         <button
           className="navbar-toggler"
