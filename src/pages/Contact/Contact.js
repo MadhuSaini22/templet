@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 // import Madhu from "../../assets/me1.jpg";
 // import Hemu from "../../assets/hemanshi1.jpg";
@@ -12,7 +13,7 @@ const Contact = () => {
           className="card-header"
           style={{ textAlign: "center", height: "40px" }}
         ></div>
-        <div className="card-body" style={{textAlign:"center"}}>
+        <div className="card-body" style={{ textAlign: "center" }}>
           <h5 className="card-title">BRTS Management Ltd</h5>
           <p className="card-text"> For any query contact here: </p>
           <a href="#" className="btn btn-primary">
