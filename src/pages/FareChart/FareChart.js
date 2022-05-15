@@ -19,14 +19,14 @@ const FareChart = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{width:"100%"}}>
         <div class="inner-banner">
           <img src={img} alt="." />
         
       </div>
       <div class="container" style={{ marginTop: "10px" }}>
         <div class="col-md-12 col-sm-12">
-          <h1>Fare Chart</h1>
+          <h1 style={{textAlign:"center"}}>Fare Chart</h1>
         </div>
       </div>
       <div

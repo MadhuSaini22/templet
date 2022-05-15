@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
+import logo from "../assets/main_logo.JPG";
+import logo_bg from "../assets/logo-bg.jpg";
 
 const Navbar = () => {
   function animation() {
@@ -45,9 +47,7 @@ const Navbar = () => {
   return (
     <>
       <nav id="id1">
-        <NavLink className="navbar-brand navbar-logo" to="" exact>
-          BRTS Management System
-        </NavLink>
+        <NavLink className="navbar-brand navbar-logo" to="" exact></NavLink>
 
         <div className="main">
           <button
@@ -315,11 +315,11 @@ const Navbar = () => {
                         <hr />
                         <div class="fare-row">
                           <div class="label">From</div>
-                          <div class="label2">xyz</div>
+                          <div class="label2">Jamna Nagar</div>
                         </div>
                         <p>
                           <div class="label">To</div>
-                          <div class="label2">xyz</div>
+                          <div class="label2">Chikuvadi</div>
                         </p>
                         <p>
                           <div class="label">Adult Fare</div>
@@ -391,7 +391,7 @@ const Navbar = () => {
 
                 <div class="modal-footer" style={{ padding: "10px" }}>
                   <div class="text-right small">
-                    Powered By Gujarat Munciple Corporation
+                    Powered By Gujarat Municiple Corporation
                   </div>
                 </div>
                 <div id="dynamic_render"></div>
@@ -400,6 +400,13 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+
+      <div className="bg-yellow-200 w-full h-32">
+        <div className="flex flex-row w-full h-32">
+          <img src={logo} className="w-7/12 h-32"></img>
+          <img src={logo_bg} className="w-3/5 h-32"></img>
+        </div>
+      </div>
 
       <nav className="navbar navbar-expand-lg navbar-mainbg">
         <button
@@ -439,18 +446,12 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/moneycard" exact>
-                <i className="fa fa-credit-card"></i>Money Card
-              </NavLink>
-            </li>
-
-            <li className="nav-item">
               <NavLink className="nav-link" to="/plan" exact>
                 <i className="fas fa-ticket-alt"></i>Plan ticket
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/timetable" exact>
+              <NavLink className="nav-link" to="/timetable"  href="https://drive.google.com/file/d/1A9WL0HpDC4XckPdjhD5WID75dVB6cDV4/view?usp=sharing" exact download>
                 <i className="far fa-chart-bar"></i>Time-Table
               </NavLink>
             </li>
@@ -467,6 +468,8 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+
+      
     </>
   );
 };

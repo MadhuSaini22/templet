@@ -29,7 +29,51 @@
       "from": "Chikuvadi",
       "to": "Puna Patia",
       "fare": 15
+    },
+    {
+      "id": 6,
+      "from": "Model Town",
+      "to": "Idharwar Farm Junction",
+      "fare": 19
+    },
+    {
+      "id": 7,
+      "from": "Ongc",
+      "to": "Magdalla",
+      "fare": 5
+    },
+    {
+      "id": 8,
+      "from": "Someshwar Junction",
+      "to": "Anuwrat Dwar",
+      "fare": 8
     }
+    ,
+    {
+      "id": 9,
+      "from": "Dindoli Kharwasa",
+      "to": "Pandesara",
+      "fare": 20
+    },
+    {
+      "id": 10,
+      "from": "Model Town",
+      "to": "Parwat Patia",
+      "fare": 19
+    },
+    {
+      "id": 11,
+      "from": "Ishwar Farm Junction",
+      "to": "University",
+      "fare": 5
+    },
+    {
+      "id": 12,
+      "from": "Jogni Mata Chowk",
+      "to": "Aas Pass Mandir",
+      "fare": 8
+    }
+
   ]
   
 }

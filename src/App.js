@@ -9,16 +9,17 @@ import {
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
-import MoneyCard from "./pages/MoneyCard/MoneyCard";
 import TimeTable from "./pages/TimeTable/TimeTable";
 import Plan from "./pages/Plan/Plan";
 import FareChart from "./pages/FareChart/FareChart";
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
+      
       <main>
         <Switch>
           <Route path="/" exact>
@@ -26,9 +27,6 @@ const App = () => {
           </Route>
           <Route path="/about" exact>
             <About />
-          </Route>
-          <Route path="/moneycard" exact>
-            <MoneyCard />
           </Route>
           <Route path="/timetable" exact>
             <TimeTable />
@@ -45,6 +43,7 @@ const App = () => {
           <Redirect to="/" />
         </Switch>
       </main>
+      <Footer/>
     </Router>
   );
 };

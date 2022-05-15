@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import Select from "react-select";
 
 const Plan = () => {
-  const [selected, setSelected] = useState(route.label);
+  // const [selected, setSelected] = useState(route.label);
 
 
 
 
 
-  const handler= e => {
-    setSelected(e.value);
-    console.log(selected);
-  }
+  // const handler= e => {
+  //   setSelected(e.value);
+  //   console.log(selected);
+  // }
 
 
   var route = [
@@ -63,10 +63,10 @@ const Plan = () => {
       >
         <div>
           <div style={{ width: "25%" }}>
-            <Select options={route} placeholder="Search Source..." value={selected} onChange={handler} />
+            <Select options={route} placeholder="Search Source..."  />
           </div>
           <br />
-          <h1>{selected}</h1>
+          {/* <h1>{selected}</h1> */}
 
           <div style={{ width: "25%" }}>
             <Select options={route} placeholder="Search Destination..." />

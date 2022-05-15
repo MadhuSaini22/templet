@@ -151,7 +151,7 @@ const Home = () => {
           </marquee>
         </div>
       </div>
-    </div>
+         </div>
   );
 };
 export default Home;
