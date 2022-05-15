@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
+import logo from "../assets/main_logo.JPG"
+import logo_bg from "../assets/logo-bg.jpg"
 import { useContext } from "react";
 import AuthContext from "../context/context";
 const Navbar = () => {

@@ -6,22 +6,22 @@ import AuthContext from "../../context/context";
 const Plan = () => {
   // const [selectedSource, setSelectedSource] = useState('');
   // const [selectDestination, setSelectedDestination] = useState('');
-  const { selectedSource, setSelectedSource, selectDestination, setSelectedDestination } = useContext(AuthContext)
+  const {
+    selectedSource,
+    setSelectedSource,
+    selectDestination,
+    setSelectedDestination,
+  } = useContext(AuthContext);
 
-
-
-
-  const handlerSource = e => {
+  const handlerSource = (e) => {
     // console.log(e.target.value);
     setSelectedSource(e.target.value);
-  }
+  };
 
-
-  const handlerDest = e => {
+  const handlerDest = (e) => {
     // console.log(e.target.value);
     setSelectedDestination(e.target.value);
-  }
-
+  };
 
   var route = [
     {
@@ -61,8 +61,8 @@ const Plan = () => {
       fare: 15,
     },
   ];
-  console.log('source', selectedSource);
-  console.log('dest', selectDestination);
+  console.log("source", selectedSource);
+  console.log("dest", selectDestination);
   return (
     <>
       <div
@@ -85,26 +85,64 @@ const Plan = () => {
           <br />
           <h1>{selected}</h1> */}
 
-          <select name="route" id="route" onChange={(e) => handlerSource(e)} style={{ width: "25%", border: "1px solid black", display: "block", margin: "20px 0", padding: "5px" }}>
+          <select
+            name="route"
+            id="route"
+            onChange={(e) => handlerSource(e)}
+            style={{
+              width: "25%",
+              borderRadius:"10px",
+              border: "1px solid black",     
+              display: "block",
+              margin: "20px 0",
+              padding: "5px",
+            }}
+          >
             {route.map((val) => {
-              return <>{
-                val.value === 0 ? <option value="" disabled selected hidden>Choose a Source</option> :
-                  <option key={val.value} value={val.label} >{val.label}</option>
-              }
-              </>
+              return (
+                <>
+                  {val.value === 0 ? (
+                    <option value="" disabled selected hidden>
+                      Choose a Source
+                    </option>
+                  ) : (
+                    <option key={val.value} value={val.label}>
+                      {val.label}
+                    </option>
+                  )}
+                </>
+              );
             })}
           </select>
-          <select name="route" id="route" onChange={(e) => handlerDest(e)} style={{ width: "25%", border: "1px solid black", display: "block", margin: "20px 0", padding: "5px" }}>
+          <select
+            name="route"
+            id="route"
+            onChange={(e) => handlerDest(e)}
+            style={{
+              width: "25%",
+              border: "1px solid black",
+              borderRadius:"10px",
+              display: "block",
+              margin: "20px 0",
+              padding: "5px",
+            }}
+          >
             {route.map((val) => {
-              return <>{
-                val.value === 0 ? <option value="" disabled selected hidden>Choose a Destination</option> :
-                  <option key={val.value} value={val.label} >{val.label}</option>
-              }
-              </>
+              return (
+                <>
+                  {val.value === 0 ? (
+                    <option value="" disabled selected hidden>
+                      Choose a Destination
+                    </option>
+                  ) : (
+                    <option key={val.value} value={val.label}>
+                      {val.label}
+                    </option>
+                  )}
+                </>
+              );
             })}
           </select>
-
-
 
           {/* <option value="saab">Saab</option>
             <option value="mercedes">Mercedes</option>
@@ -159,7 +197,7 @@ const Plan = () => {
       <div
         class="col-md-8 col-md-offset-2"
         style={{
-          borderRadius: "20px",
+    
           backgroundColor: "grey",
           width: "100%",
           height: "150px",
@@ -179,7 +217,7 @@ const Plan = () => {
           }}
         >
           <p>
-            <span style={{ color: "#fd0026" }}>
+            <span style={{ fontSize: "20px", color: "#fd0026" }}>
               Please enter the journey start and destination names to view the
               available route options .
             </span>
