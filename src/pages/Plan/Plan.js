@@ -1,20 +1,35 @@
-import React, { useState } from "react";
-import Select from "react-select";
+import React from "react";
+// import Select from "react-select";
+import { useContext } from "react";
+import AuthContext from "../../context/context";
 
 const Plan = () => {
-  const [selected, setSelected] = useState(route.label);
+  // const [selectedSource, setSelectedSource] = useState('');
+  // const [selectDestination, setSelectedDestination] = useState('');
+  const { selectedSource, setSelectedSource, selectDestination, setSelectedDestination } = useContext(AuthContext)
 
 
 
 
+  const handlerSource = e => {
+    // console.log(e.target.value);
+    setSelectedSource(e.target.value);
+  }
 
-  const handler= e => {
-    setSelected(e.value);
-    console.log(selected);
+
+  const handlerDest = e => {
+    // console.log(e.target.value);
+    setSelectedDestination(e.target.value);
   }
 
 
   var route = [
+    {
+      value: 0,
+      label: "nothing",
+      to: "nothing",
+      fare: 0,
+    },
     {
       value: 1,
       label: "Kharwar Nagar",
@@ -46,6 +61,8 @@ const Plan = () => {
       fare: 15,
     },
   ];
+  console.log('source', selectedSource);
+  console.log('dest', selectDestination);
   return (
     <>
       <div
@@ -62,15 +79,39 @@ const Plan = () => {
         }}
       >
         <div>
-          <div style={{ width: "25%" }}>
-            <Select options={route} placeholder="Search Source..." value={selected} onChange={handler} />
+          {/* <div style={{ width: "25%", border: "1px solid black" }}>
+            <Select options={route} placeholder="Search Source..." value={selected} onChange={(e) => handler(e)} />
           </div>
           <br />
-          <h1>{selected}</h1>
+          <h1>{selected}</h1> */}
 
-          <div style={{ width: "25%" }}>
+          <select name="route" id="route" onChange={(e) => handlerSource(e)} style={{ width: "25%", border: "1px solid black", display: "block", margin: "20px 0", padding: "5px" }}>
+            {route.map((val) => {
+              return <>{
+                val.value === 0 ? <option value="" disabled selected hidden>Choose a Source</option> :
+                  <option key={val.value} value={val.label} >{val.label}</option>
+              }
+              </>
+            })}
+          </select>
+          <select name="route" id="route" onChange={(e) => handlerDest(e)} style={{ width: "25%", border: "1px solid black", display: "block", margin: "20px 0", padding: "5px" }}>
+            {route.map((val) => {
+              return <>{
+                val.value === 0 ? <option value="" disabled selected hidden>Choose a Destination</option> :
+                  <option key={val.value} value={val.label} >{val.label}</option>
+              }
+              </>
+            })}
+          </select>
+
+
+
+          {/* <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option> */}
+          {/* <div style={{ width: "25%", border: "1px solid black" }}>
             <Select options={route} placeholder="Search Destination..." />
-          </div>
+          </div> */}
 
           {/*            
             <select
