@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
-import logo from "../assets/main_logo.JPG";
-import logo_bg from "../assets/logo-bg.jpg";
-
+import { useContext } from "react";
+import AuthContext from "../context/context";
 const Navbar = () => {
+  const { selectedSource, selectDestination } = useContext(AuthContext)
+
   function animation() {
     var tabsNewAnim = $("#navbarSupportedContent");
     var activeItemNewAnim = tabsNewAnim.find(".active");
@@ -315,11 +316,11 @@ const Navbar = () => {
                         <hr />
                         <div class="fare-row">
                           <div class="label">From</div>
-                          <div class="label2">Jamna Nagar</div>
+                          <div class="label2">{selectedSource}</div>
                         </div>
                         <p>
                           <div class="label">To</div>
-                          <div class="label2">Chikuvadi</div>
+                          <div class="label2">{selectDestination}</div>
                         </p>
                         <p>
                           <div class="label">Adult Fare</div>

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 // import Madhu from "../../assets/me1.jpg";
 // import Hemu from "../../assets/hemanshi1.jpg";

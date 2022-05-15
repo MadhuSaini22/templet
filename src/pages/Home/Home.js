@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-distracting-elements */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import img1 from "../../assets/one.jpg";
 // import {img2} from "../../assets/banner_02"
@@ -89,7 +92,7 @@ const Home = () => {
           <marquee direction="up" scrolldelay="150" style={{ height: "200px" }}>
             <p>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 style={{ color: "#d8280c", fontWeight: "600" }}
               >
@@ -99,7 +102,7 @@ const Home = () => {
             </p>
             <p>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 style={{ color: "#d8280c", fontWeight: "600" }}
               >
@@ -109,7 +112,7 @@ const Home = () => {
             </p>
             <p>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 style={{ color: "#d8280c", fontWeight: "600" }}
               >
@@ -119,7 +122,7 @@ const Home = () => {
             </p>
             <p>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 style={{ color: "#d8280c", fontWeight: "600" }}
               >
@@ -130,7 +133,7 @@ const Home = () => {
             </p>
             <p>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 style={{ color: "#d8280c", fontWeight: "600" }}
               >
@@ -140,7 +143,7 @@ const Home = () => {
             </p>
             <p>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 style={{ color: "#d8280c", fontWeight: "600" }}
               >

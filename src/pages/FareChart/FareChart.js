@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./FareChart.css";
-import data from "../../db.json";
+// import data from "../../db.json";
 import img from "../../assets/Inner_banner.jpg";
 
 const FareChart = () => {
@@ -19,10 +19,10 @@ const FareChart = () => {
   }, []);
 
   return (
-    <div style={{width:"100%"}}>
-        <div class="inner-banner">
-          <img src={img} alt="." />
-        
+    <div>
+      <div class="inner-banner">
+        <img src={img} alt="." />
+
       </div>
       <div class="container" style={{ marginTop: "10px" }}>
         <div class="col-md-12 col-sm-12">
@@ -46,7 +46,7 @@ const FareChart = () => {
               style={{ zIndex: " 0" }}
             />
           </div>
-          
+
         </div>
 
         <div class="col-md-3">
@@ -63,7 +63,7 @@ const FareChart = () => {
             />
             {/* <img  class="planautoloader" src="/Content/images/35.gif" alt="."/> */}
           </div>
-          
+
         </div>
         <div class="col-md-3">
           <button type="button" class="btn btn-primary btn-md">
@@ -76,7 +76,7 @@ const FareChart = () => {
       </div>
 
       <div class="grid">
-        <div class="grid-header" style={{backgroundColor:"#6640bf" , color:"white"}}>
+        <div class="grid-header" style={{ backgroundColor: "#6640bf", color: "white" }}>
           <span>Fare Matrix</span>
           <span style={{ float: "right" }}>
             * Luggage more than 5 Kgs will be charged at the station
@@ -84,9 +84,9 @@ const FareChart = () => {
         </div>
       </div>
 
-      <div style={{marginTop:"40px",justifyContent:"center",alignItems:"center",marginLeft:"370px",width:"50%",padding:"10px"}}>      
-        <table style={{border:"1px solid",padding:"30px"}}>
-        <tr style={{padding:"10px",margin:"40px"}}>
+      <div style={{ marginTop: "40px", justifyContent: "center", alignItems: "center", marginLeft: "370px", width: "50%", padding: "10px" }}>
+        <table style={{ border: "1px solid", padding: "30px" }}>
+          <tr style={{ padding: "10px", margin: "40px" }}>
             <th>From </th>
             <th>To</th>
             <th>Fare</th>
@@ -100,7 +100,7 @@ const FareChart = () => {
               </tr>
             ))
           }
-         
+
         </table>
       </div>
     </div>
