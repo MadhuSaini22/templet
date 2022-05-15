@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div>
           <p style={{ color: "cornsilk" }}>
-            ©2022 Copyright BRTS Management System
+            ©2022 Copyright Smart BRTS Limited
           </p>
         </div>
       </div>

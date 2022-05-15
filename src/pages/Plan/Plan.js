@@ -60,6 +60,49 @@ const Plan = () => {
       to: "Puna Patia",
       fare: 15,
     },
+    {
+      value: 6,
+      label: "Model Town",
+      to: "Idharwar Farm Junction",
+      fare: 19
+    },
+    {
+      value: 7,
+      label: "Ongc",
+      to: "Magdalla",
+      fare: 5
+    },
+    {
+      value: 8,
+      label: "Someshwar Junction",
+      to: "Anuwrat Dwar",
+      fare: 8
+    }
+    ,
+    {
+      value: 9,
+      label: "Dindoli Kharwasa",
+      to: "Pandesara",
+      fare: 20
+    },
+    {
+      value: 10,
+      label: "Model Town",
+      to: "Parwat Patia",
+      fare: 19
+    },
+    {
+      value: 11,
+      label: "Ishwar Farm Junction",
+      to: "University",
+      fare: 5
+    },
+    {
+      value: 12,
+      label: "Jogni Mata Chowk",
+      to: "Aas Pass Mandir",
+      fare: 8
+    }
   ];
   console.log("source", selectedSource);
   console.log("dest", selectDestination);
