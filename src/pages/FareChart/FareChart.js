@@ -84,7 +84,7 @@ const FareChart = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "40px", justifyContent: "center", alignItems: "center", marginLeft: "370px", width: "50%", padding: "10px" }}>
+      <div style={{ marginBottom: "40px",marginTop: "40px", justifyContent: "center", alignItems: "center", marginLeft: "370px", width: "50%", padding: "10px" }}>
         <table style={{ border: "1px solid", padding: "30px" }}>
           <tr style={{ padding: "10px", margin: "40px" }}>
             <th>From </th>
