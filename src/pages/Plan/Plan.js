@@ -205,8 +205,8 @@ const Plan = () => {
                 height: "37px",
               }}
             ></select> */}
-          <br />
-          <br />
+        
+          
 
           <button
             type="button"
@@ -216,10 +216,12 @@ const Plan = () => {
             style={{
               borderRadius: "20px",
               border: "2px solid Brown",
-              backgroundColor: "Brown",
-              padding: "5px",
+              backgroundColor: "#800000",
+              padding: "4px",
               color: "white",
-              width: "15%",
+              width: "12%",
+              margin:"5px"
+              
             }}
           >
             Plan Your Journey

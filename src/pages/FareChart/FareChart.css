@@ -11,6 +11,14 @@
   margin-top: -16px;
 }
 
+th, td{
+  padding:7px;
+}
+
+th{
+  font-weight:bold;
+}
+
 #rosesearch label {
   display: block;
   font-weight: bold;

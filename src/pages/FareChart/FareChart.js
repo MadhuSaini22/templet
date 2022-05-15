@@ -24,9 +24,9 @@ const FareChart = () => {
         <img src={img} alt="." />
 
       </div>
-      <div class="container" style={{ marginTop: "10px" }}>
+      <div style={{ marginTop: "10px" }}>
         <div class="col-md-12 col-sm-12">
-          <h1 style={{textAlign:"center"}}>Fare Chart</h1>
+          <p class="text-center font-sans text-4xl font-medium text-gray-700" >Fare Chart</p>
         </div>
       </div>
       <div
@@ -43,7 +43,7 @@ const FareChart = () => {
               id="tags3"
               class="form-control"
               placeholder="Search Here"
-              style={{ zIndex: " 0" }}
+              style={{ zIndex: " 0",marginBottom:"5px"}}
             />
           </div>
 
@@ -66,7 +66,7 @@ const FareChart = () => {
 
         </div>
         <div class="col-md-3">
-          <button type="button" class="btn btn-primary btn-md">
+          <button type="button" class="btn  btn-md " style={{ backgroundColor:"#20055f"}}>
             <i class="fa fa-search"></i>
           </button>
           {/* <button type="button" class="btn btn-primary btn-md">
@@ -76,7 +76,7 @@ const FareChart = () => {
       </div>
 
       <div class="grid">
-        <div class="grid-header" style={{ backgroundColor: "#6640bf", color: "white" }}>
+        <div class="grid-header" style={{ backgroundColor: "#305596", color: "white" }}>
           <span>Fare Matrix</span>
           <span style={{ float: "right" }}>
             * Luggage more than 5 Kgs will be charged at the station
