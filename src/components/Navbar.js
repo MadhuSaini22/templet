@@ -403,6 +403,14 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <div className="bg-yellow-200 w-full h-32">
+        <div className="flex flex-row w-full h-32">
+          <img src={logo} className="w-7/12 h-32">
+          </img>
+          <img src={logo_bg} className="w-3/5 h-32">
+          </img>
+        </div>
+      </div>
 
       <div className="bg-yellow-200 w-full h-32">
         <div className="flex flex-row w-full h-32">
