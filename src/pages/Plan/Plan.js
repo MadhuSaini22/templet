@@ -1,5 +1,4 @@
 import React from "react";
-// import Select from "react-select";
 import { useContext } from "react";
 import AuthContext from "../../context/context";
 
@@ -64,45 +63,44 @@ const Plan = () => {
       value: 6,
       label: "Model Town",
       to: "Idharwar Farm Junction",
-      fare: 19
+      fare: 19,
     },
     {
       value: 7,
       label: "Ongc",
       to: "Magdalla",
-      fare: 5
+      fare: 5,
     },
     {
       value: 8,
       label: "Someshwar Junction",
       to: "Anuwrat Dwar",
-      fare: 8
-    }
-    ,
+      fare: 8,
+    },
     {
       value: 9,
       label: "Dindoli Kharwasa",
       to: "Pandesara",
-      fare: 20
+      fare: 20,
     },
     {
       value: 10,
       label: "Model Town",
       to: "Parwat Patia",
-      fare: 19
+      fare: 19,
     },
     {
       value: 11,
       label: "Ishwar Farm Junction",
       to: "University",
-      fare: 5
+      fare: 5,
     },
     {
       value: 12,
       label: "Jogni Mata Chowk",
       to: "Aas Pass Mandir",
-      fare: 8
-    }
+      fare: 8,
+    },
   ];
   console.log("source", selectedSource);
   console.log("dest", selectDestination);
@@ -112,30 +110,21 @@ const Plan = () => {
         style={{
           backgroundImage:
             "url('https://user-images.githubusercontent.com/81684710/167236932-294f7178-4008-4a97-91ad-00a211eabdf7.jpg')",
-          backgroundSize: "100% 50%",
-          backgroundAttachment: "fixed",
           width: "100%",
-          height: "300px",
+          height: "235px",
           opacity: "0.9",
           padding: "30px 10px 10px 30px",
-          justifyContent: "center",
         }}
       >
-        <div>
-          {/* <div style={{ width: "25%", border: "1px solid black" }}>
-            <Select options={route} placeholder="Search Source..." value={selected} onChange={(e) => handler(e)} />
-          </div>
-          <br />
-          <h1>{selected}</h1> */}
-
+        <div>       
           <select
             name="route"
             id="route"
             onChange={(e) => handlerSource(e)}
             style={{
               width: "25%",
-              borderRadius:"10px",
-              border: "1px solid black",     
+              borderRadius: "10px",
+              border: "1px solid black",
               display: "block",
               margin: "20px 0",
               padding: "5px",
@@ -164,7 +153,7 @@ const Plan = () => {
             style={{
               width: "25%",
               border: "1px solid black",
-              borderRadius:"10px",
+              borderRadius: "10px",
               display: "block",
               margin: "20px 0",
               padding: "5px",
@@ -205,8 +194,6 @@ const Plan = () => {
                 height: "37px",
               }}
             ></select> */}
-        
-          
 
           <button
             type="button"
@@ -220,8 +207,7 @@ const Plan = () => {
               padding: "4px",
               color: "white",
               width: "12%",
-              margin:"5px"
-              
+              margin: "5px",
             }}
           >
             Plan Your Journey
@@ -242,7 +228,6 @@ const Plan = () => {
       <div
         class="col-md-8 col-md-offset-2"
         style={{
-    
           backgroundColor: "grey",
           width: "100%",
           height: "150px",

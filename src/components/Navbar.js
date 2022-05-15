@@ -2,12 +2,14 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
-import logo from "../assets/main_logo.JPG"
-import logo_bg from "../assets/logo-bg.jpg"
+import logo from "../assets/main_logo.JPG";
+import logo_bg from "../assets/logo-bg.jpg";
 import { useContext } from "react";
 import AuthContext from "../context/context";
+
+
 const Navbar = () => {
-  const { selectedSource, selectDestination } = useContext(AuthContext)
+  const { selectedSource, selectDestination } = useContext(AuthContext);
 
   function animation() {
     var tabsNewAnim = $("#navbarSupportedContent");
@@ -405,10 +407,8 @@ const Navbar = () => {
       </nav>
       <div className="w-full h-32">
         <div className="flex flex-row w-full h-32">
-          <img src={logo} className="w-7/12 h-32 ml-3">
-          </img>
-          <img src={logo_bg} className="w-3/5 h-32">
-          </img>
+          <img src={logo} className="w-7/12 h-32 ml-3"></img>
+          <img src={logo_bg} className="w-3/5 h-32"></img>
         </div>
       </div>
 
@@ -455,7 +455,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/timetable"  href="https://drive.google.com/file/d/1A9WL0HpDC4XckPdjhD5WID75dVB6cDV4/view?usp=sharing" exact download>
+              <NavLink
+                className="nav-link"
+                to="/timetable"
+                href="https://drive.google.com/file/d/1A9WL0HpDC4XckPdjhD5WID75dVB6cDV4/view?usp=sharing"
+                exact
+                download
+              >
                 <i className="far fa-chart-bar"></i>Time-Table
               </NavLink>
             </li>
@@ -472,8 +478,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-
-      
     </>
   );
 };

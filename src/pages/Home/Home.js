@@ -1,19 +1,12 @@
-/* eslint-disable jsx-a11y/no-distracting-elements */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 import img1 from "../../assets/one.jpg";
-// import {img2} from "../../assets/banner_02"
 import img3 from "../../assets/two.jpg";
 import img2 from "../../assets/three.jpg";
+import "./Home.css";
+
 const Home = () => {
   return (
-    <div style={{ width: "100%" }}>
-      {/* <h1 className="text-center" style={{ paddingTop: "30%" }}>
-        Home
-      </h1> */}
-      
-
+    <div className="main"style={{ width: "100%" }}>   
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -58,14 +51,7 @@ const Home = () => {
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-      <div class="carousel-item">
-        <img src="..." alt="..." />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
+      
       <div class="flex flex-row">
         <div className="mt-4 ml-4 w-full mr-4">
           <div className="mt-3 ml-2 font-serif text-4xl text-gray-600  ">
@@ -83,27 +69,29 @@ const Home = () => {
           style={{
             backgroundColor: "#20055f",
             color: "white",
+            maxHeight:"20rem",
             width: "30%",
-            padding: "20px",
+            padding: "2.0rem",
             // height:"240px",
-            margin: "36px 24px",
-            borderRadius: "7px",
+            margin: "3.6rem 2.4rem",
+            borderRadius: ".7rem",
           }}
         >
           <h1
             style={{
-              fontSize: "25px",
-              border: "1px solid ",
-              borderRadius: "20px",
-              padding: "5px",
-              margin: "5px",
+              fontSize: "1.5rem",
+              border: ".1rem solid ",
+              borderRadius: "2.0rem",
+              padding: ".5rem",
+              margin: ".5rem",
+              marginBottom:"1.5rem"
             }}
           >
             <i class="fa fa-exclamation-circle"></i> <span className="mt-3">What's New</span>
           </h1>
 
           <div>
-            <marquee direction="up" scrolldelay="150" style={{ height: "200px" }}>
+            <marquee direction="up" scrolldelay="150" style={{ maxHeight: "10rem" }}>
               <p>
                 <a
                   href=""
