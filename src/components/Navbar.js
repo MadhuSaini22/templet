@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
+import logo from "../assets/main_logo.JPG"
+import logo_bg from "../assets/logo-bg.jpg"
 
 const Navbar = () => {
   function animation() {
@@ -46,7 +48,6 @@ const Navbar = () => {
     <>
       <nav id="id1">
         <NavLink className="navbar-brand navbar-logo" to="" exact>
-          BRTS Management System
         </NavLink>
 
         <div className="main">
@@ -400,6 +401,14 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <div className="bg-yellow-200 w-full h-32">
+        <div className="flex flex-row w-full h-32">
+          <img src={logo} className="w-7/12 h-32">
+          </img>
+          <img src={logo_bg} className="w-3/5 h-32">
+          </img>
+        </div>
+      </div>
 
       <nav className="navbar navbar-expand-lg navbar-mainbg">
         <button
@@ -435,12 +444,6 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/about" exact>
                 <i className="fa fa-address-card"></i>About Us
-              </NavLink>
-            </li>
-
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/moneycard" exact>
-                <i className="fa fa-credit-card"></i>Money Card
               </NavLink>
             </li>
 

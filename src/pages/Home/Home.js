@@ -9,6 +9,7 @@ const Home = () => {
       {/* <h1 className="text-center" style={{ paddingTop: "30%" }}>
         Home
       </h1> */}
+      
 
       <div
         id="carouselExampleIndicators"
@@ -62,93 +63,107 @@ const Home = () => {
           <p>...</p>
         </div>
       </div>
-
-      <div
-        style={{
-          backgroundColor: "#6640bf",
-          color: "white",
-          width: "30%",
-          padding: "20px",
-          margin: "20px 5px 5px 1000px",
-          borderRadius: "7px",
-        }}
-      >
-        <h1
+      <div class="flex flex-row">
+        <div className="mt-4 ml-4 w-full mr-4">
+          <div className="mt-3 ml-2 font-serif text-4xl text-gray-600  ">
+          <p>
+            Welcome to Smart BRT System Limited
+          </p>
+          </div>
+          <div className="w-full tracking-wide ml-2 text-justify font-sans text-lg text-gray-600 font-normal leading-9 relative">
+          <p>
+            The BRTS Cell is responsible for development and operation of Bus Rapid Transit System. In Order to provide faster,&nbsp; reliable,&nbsp; eco friendly and advanced Public Transportation Smart BRT System Ltd is committed to operate and run BRTS services for the citizen of Gujarat. Smart BRT System Ltd is responsible to operate buses,&nbsp; to decide,&nbsp;to maintain bus shelters and smart BRT System Ltd also gets advertisement rights across BRTS route and provides e-ticket facilities and for moneycard entry and exit facilities.
+          </p>
+          </div>
+        </div>
+        <div
           style={{
-            fontSize: "25px",
-            border: "1px solid ",
-            borderRadius: "20px",
-            padding: "5px",
-            margin: "5px",
+            backgroundColor: "#20055f",
+            color: "white",
+            width: "30%",
+            padding: "20px",
+            height:"240px",
+            margin: "36px 24px",
+            borderRadius: "7px",
           }}
         >
-          <i class="fa fa-exclamation-circle"></i> <span>What's New</span>
-        </h1>
+          <h1
+            style={{
+              fontSize: "25px",
+              border: "1px solid ",
+              borderRadius: "20px",
+              padding: "5px",
+              margin: "5px",
+            }}
+          >
+            <i class="fa fa-exclamation-circle"></i> <span className="mt-3">What's New</span>
+          </h1>
 
-        <div>
-          <marquee direction="up" scrolldelay="150" style={{ height: "200px" }}>
-            <p>
-              <a
-                href=""
-                target="_blank"
-                style={{ color: "#d8280c", fontWeight: "600" }}
-              >
-                Click here
-              </a>
-              &nbsp;to download GHG emission details
-            </p>
-            <p>
-              <a
-                href=""
-                target="_blank"
-                style={{ color: "#d8280c", fontWeight: "600" }}
-              >
-                Click here
-              </a>
-              &nbsp;to download Student Pass (Pass Issuance & Renewal)
-            </p>
-            <p>
-              <a
-                href=""
-                target="_blank"
-                style={{ color: "#d8280c", fontWeight: "600" }}
-              >
-                Click here
-              </a>
-              &nbsp;to download Blind/Handicap_Form (Pass Issuance & Renewal)
-            </p>
-            <p>
-              <a
-                href=""
-                target="_blank"
-                style={{ color: "#d8280c", fontWeight: "600" }}
-              >
-                Click here
-              </a>
-              &nbsp;to download Senior Citizen Application Form (Pass Issuance &
-              Renewal)
-            </p>
-            <p>
-              <a
-                href=""
-                target="_blank"
-                style={{ color: "#d8280c", fontWeight: "600" }}
-              >
-                Click here
-              </a>
-              &nbsp;to download Monthly/Quarterly Pass (Pass Issuance & Renewal)
-            </p>
-            <p>
-              <a
-                href=""
-                target="_blank"
-                style={{ color: "#d8280c", fontWeight: "600" }}
-              >
-                Click here
-              </a>
-              &nbsp;to download Sportsman Pass Form
-            </p>
-          </marquee>
+          <div>
+            <marquee direction="up" scrolldelay="150" style={{ height: "200px" }}>
+              <p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="text-yellow-500 font-semibold"
+                >
+                  Click here
+                </a>
+                &nbsp;to download GHG emission details
+              </p>
+              <p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="text-yellow-500 font-semibold"
+                >
+                  Click here
+                </a>
+                &nbsp;to download Student Pass (Pass Issuance & Renewal)
+              </p>
+              <p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="text-yellow-500 font-semibold"
+                >
+                  Click here
+                </a>
+                &nbsp;to download Blind/Handicap_Form (Pass Issuance & Renewal)
+              </p>
+              <p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="text-yellow-500 font-semibold"
+                >
+                  Click here
+                </a>
+                &nbsp;to download Senior Citizen Application Form (Pass Issuance &
+                Renewal)
+              </p>
+              <p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="text-yellow-500 font-semibold"
+                >
+                  Click here
+                </a>
+                &nbsp;to download Monthly/Quarterly Pass (Pass Issuance & Renewal)
+              </p>
+              <p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="text-yellow-500 font-semibold"
+                >
+                  Click here
+                </a>
+                &nbsp;to download Sportsman Pass Form
+              </p>
+            </marquee>
+          </div>
         </div>
       </div>
     </div>
