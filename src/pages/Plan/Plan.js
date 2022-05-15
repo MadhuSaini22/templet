@@ -112,14 +112,13 @@ const Plan = () => {
         style={{
           backgroundImage:
             "url('https://user-images.githubusercontent.com/81684710/167236932-294f7178-4008-4a97-91ad-00a211eabdf7.jpg')",
-          backgroundSize: "100% 50%",
-          backgroundAttachment: "fixed",
           width: "100%",
-          height: "300px",
+          height: "250px",
           opacity: "0.9",
           padding: "30px 10px 10px 30px",
           justifyContent: "center",
         }}
+        className="bg-no-repeat"
       >
         <div>
           {/* <div style={{ width: "25%", border: "1px solid black" }}>
@@ -245,7 +244,7 @@ const Plan = () => {
     
           backgroundColor: "grey",
           width: "100%",
-          height: "150px",
+          height: "120px",
           paddingTop: "25px",
         }}
       >
@@ -255,9 +254,9 @@ const Plan = () => {
             borderRadius: "20px",
             backgroundColor: "white",
             width: "80%",
-            height: "100px",
+            height: "70px",
             textAlign: "center",
-            paddingTop: "40px",
+            paddingTop: "20px",
             marginLeft: "150px",
           }}
         >
