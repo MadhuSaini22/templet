@@ -85,7 +85,7 @@ const Home = () => {
             color: "white",
             width: "30%",
             padding: "20px",
-            height:"240px",
+            // height:"240px",
             margin: "36px 24px",
             borderRadius: "7px",
           }}
